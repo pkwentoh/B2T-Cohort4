@@ -9,7 +9,7 @@ let fruits = ["apple", "orange", "kiwi"];
 document.getElementById("fruitsH1").innerHTML = fruits;
 
 function addFruitToEnd(){
-	fruits.push(document.getElementById("fruitId").value);
+	fruits.push(document.getElementById("fruitId").value.toLowerCase());
 	fruits.sort();
 	document.getElementById("fruitsH1").innerHTML = fruits.join(" with ")
 	console.log(fruits);
